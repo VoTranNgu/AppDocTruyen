@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchActivity">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="390dp"
+        android:id="@+id/btn_schoollife"
+        android:textAllCaps="false"
+        android:text=" Học đường"
+        android:background="@drawable/schoollife"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:text=" Hành động"
+        android:id="@+id/btn_action"
+        android:background="@drawable/action"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textAllCaps="false"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="210dp"/>
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="70dp"
+        android:text=" Drama"
+        android:background="@drawable/drama"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/btn_drama"
+        android:textAllCaps="false"
+        android:layout_marginTop="475dp"
+        android:layout_marginLeft="210dp"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:text=" Kinh dị"
+        android:id="@+id/btn_Horror"
+        android:textAllCaps="false"
+        android:background="@drawable/horror"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="475dp"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:text=" Tình cảm"
+        android:id="@+id/btn_romance"
+        android:textAllCaps="false"
+        android:background="@drawable/romance"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="210dp"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:text=" Hài hước"
+        android:id="@+id/btn_comedy"
+        android:background="@drawable/comedy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom_background">
+
+        <EditText
+            android:id="@+id/edt_TimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:hint="Nhập tên truyện"
+            android:textColor="#fff"
+            android:textColorHint="#B3ADAD"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/DSTruyen"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:numColumns="3"></GridView>
+</RelativeLayout>
